@@ -4,10 +4,10 @@ Description: Welcome to the Embedded Development Learning Repository! This repos
 
 ## Features:
 
-Learning Resources: Discover a curated list of tutorials, articles, books, and online courses covering various aspects of embedded development, including microcontrollers, firmware development, embedded systems design, and real-time operating systems (RTOS).  
-Code Examples: Explore a diverse range of code examples and projects to help you understand and practice embedded development concepts. These examples cover topics such as GPIO control, sensor interfacing, communication protocols (UART, SPI, I2C), and embedded software development using popular platforms and IDEs.  
-Documentation: Access well-documented guides, cheat sheets, and reference materials to assist you in understanding key concepts, programming techniques, and best practices in embedded development.  
-Community Collaboration: Engage with a vibrant community of embedded developers, where you can ask questions, share insights, and collaborate on projects. Take part in discussions, code reviews, and contribute your own knowledge and experiences to enrich the learning experience for everyone.  
+**Learning Resources:** Discover a curated list of tutorials, articles, books, and online courses covering various aspects of embedded development, including microcontrollers, firmware development, embedded systems design, and real-time operating systems (RTOS).  
+**Code Examples:** Explore a diverse range of code examples and projects to help you understand and practice embedded development concepts. These examples cover topics such as GPIO control, sensor interfacing, communication protocols (UART, SPI, I2C), and embedded software development using popular platforms and IDEs.  
+**Documentation:** Access well-documented guides, cheat sheets, and reference materials to assist you in understanding key concepts, programming techniques, and best practices in embedded development.  
+**Community Collaboration:** Engage with a vibrant community of embedded developers, where you can ask questions, share insights, and collaborate on projects. Take part in discussions, code reviews, and contribute your own knowledge and experiences to enrich the learning experience for everyone.  
 Whether you are pursuing a career in embedded systems or simply passionate about tinkering with hardware and software, this repository aims to empower you with the knowledge and resources needed to excel in the field of embedded development. Join us on this exciting journey of learning, experimentation, and innovation!  
 
 Welcome contributions from the community to further enhance and expand the repository. Feel free to fork, make pull requests, and share your valuable insights to help fellow learners in their embedded development journey.  
