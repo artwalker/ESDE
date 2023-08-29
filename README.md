@@ -33,3 +33,5 @@ https://www.bilibili.com/video/BV1Mb411e7re/?spm_id_from=333.999.0.0
 电路分析着实是个难点！  
 如何解决？  
 基础电路、电路分析、模电、数电  
+# 记录STM32学习过程：
+[库开发实战](https://doc.embedfire.com/mcu/stm32/f407batianhu/std/zh/latest/index.html)
