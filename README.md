@@ -35,5 +35,9 @@ Happy learning and happy coding! Embedded Development Learning Repository
 如何解决？  
 基础电路、电路分析、模电、数电  
 # 记录STM32学习过程：
-[库开发实战](https://doc.embedfire.com/mcu/stm32/f407batianhu/std/zh/latest/index.html)  
-不识别DAP仿真器，多弄几次线，就可以再ubuntu的vm虚拟机上识别了；不识别芯片，修改一些设置就识别了  
+[库开发实战](https://doc.embedfire.com/mcu/stm32/f407batianhu/std/zh/latest/index.html)
+# 问题记录
+**1. 不识别DAP仿真器**
+使用ubuntu操作系统，上面安装了VM虚拟机，之后在虚拟机上安装了win10操作系统，每次连接DAP仿真器，Keil 5并不识别，之后发现多次插拔DAP仿真器的USB连接，直到Keil 5识别。
+**2.不识别芯片**
+不识别芯片，修改一些设置就识别了  
