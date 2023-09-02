@@ -35,7 +35,7 @@ Happy learning and happy coding! Embedded Development Learning Repository
 如何解决？  
 基础电路、电路分析、模电、数电  
 [**Circuits And Electronics**](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/)  
-[**MIT 6.002 Circuits and Electronics, Spring 2007**](https://www.youtube.com/watch?v=AfQxyVuLeCs&list=PL9F74AFA03AA06A11&index=1)  
+[**MIT 6.002 Circuits and Electronics, Spring 2007 by Profs. Anant Agarwal and Jeffrey H. Lang**](https://www.youtube.com/watch?v=AfQxyVuLeCs&list=PL9F74AFA03AA06A11&index=1)  
 # 记录STM32学习过程：
 [**库开发实战**](https://doc.embedfire.com/mcu/stm32/f407batianhu/std/zh/latest/index.html)
 # 问题记录
