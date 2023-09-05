@@ -42,4 +42,6 @@ Happy learning and happy coding! Embedded Development Learning Repository
 **1. 不识别DAP仿真器**  
 使用ubuntu操作系统，上面安装了VM虚拟机，之后在虚拟机上安装了win10操作系统，每次连接DAP仿真器，Keil 5并不识别，之后发现多次插拔DAP仿真器的USB连接，直到Keil 5识别。  
 **2.不识别芯片**  
-不识别芯片，修改一些设置就识别了  
+修改Connect为under Reset之后就是别出来了；以后调整为Nomal也会识别；之后DAP仿真器与芯片连接次数多后，很快就识别出来了。  
+![image](https://github.com/artwalker/ESDE/assets/44759507/b1a7338b-57b9-4bfc-9387-78bd4f79be83)
+
