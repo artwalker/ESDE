@@ -38,7 +38,7 @@ Happy learning and happy coding! Embedded Development Learning Repository
 [**MIT 6.002 Circuits and Electronics, Spring 2007 by Profs. Anant Agarwal**](https://www.youtube.com/watch?v=AfQxyVuLeCs&list=PL9F74AFA03AA06A11&index=1)  
 # 记录STM32学习过程：
 [**库开发实战**](https://doc.embedfire.com/mcu/stm32/f407batianhu/std/zh/latest/index.html)
-# 问题记录
+## 问题记录
 **1. 不识别DAP仿真器**  
 使用ubuntu操作系统，上面安装了VM虚拟机，之后在虚拟机上安装了win10操作系统，每次连接DAP仿真器，Keil 5并不识别，之后发现多次插拔DAP仿真器的USB连接，直到Keil 5识别。  
 **2.不识别芯片**  
