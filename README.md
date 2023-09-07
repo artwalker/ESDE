@@ -43,7 +43,7 @@ Happy learning and happy coding! Embedded Development Learning Repository
 # 将 该寄存器的第6位 置1，也就是将1向左移动 5 位
 RCC_AHB1ENR |= (1<<5)
 
-# 3代表低2位值为 11，2表示每次控制两位，6表示向左移动两组
+# 3代表低2位值为 11，2表示每次控制两位，6表示向左移动6组
 # 将第6组的 两位 置0
 GPIOF_MODER &= ~ (3<<(2*6) );
 # 将1向左移动 (2*6) 位
