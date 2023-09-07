@@ -38,6 +38,20 @@ Happy learning and happy coding! Embedded Development Learning Repository
 [**MIT 6.002 Circuits and Electronics, Spring 2007 by Profs. Anant Agarwal**](https://www.youtube.com/watch?v=AfQxyVuLeCs&list=PL9F74AFA03AA06A11&index=1)  
 # 记录STM32学习过程：
 [**库开发实战**](https://doc.embedfire.com/mcu/stm32/f407batianhu/std/zh/latest/index.html)
+## 小技巧
+```C
+# 将 该寄存器的第6位 置1，也就是将1向左移动 5 位
+RCC_AHB1ENR |= (1<<5)
+
+# 3代表低2位值为 11，2表示每次控制两位，6表示向左移动两组
+# 将第6组的 两位 置0
+GPIOF_MODER &= ~ (3<<(2*6) );
+# 将1向左移动 (2*6) 位
+GPIOF_MODER |= (1<<(2*6))
+
+# 将从0开始数的第6为设置为0
+GPIOF_ODR &= ~(1<<6);
+```
 ## 问题记录
 **1. 不识别DAP仿真器**  
 使用ubuntu操作系统，上面安装了VM虚拟机，之后在虚拟机上安装了win10操作系统，每次连接DAP仿真器，Keil 5并不识别，之后发现多次插拔DAP仿真器的USB连接，直到Keil 5识别。  
