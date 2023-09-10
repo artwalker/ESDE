@@ -34,6 +34,7 @@ Happy learning and happy coding! Embedded Development Learning Repository
 电路分析着实是个难点！  
 如何解决？  
 基础电路、电路分析、模电、数电  
+### MIT 6.002
 [**Circuits And Electronics**](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/)  
 [**MIT 6.002 Circuits and Electronics, Spring 2007 by Profs. Anant Agarwal**](https://www.youtube.com/watch?v=AfQxyVuLeCs&list=PL9F74AFA03AA06A11&index=1)  
 # 记录STM32学习过程：
