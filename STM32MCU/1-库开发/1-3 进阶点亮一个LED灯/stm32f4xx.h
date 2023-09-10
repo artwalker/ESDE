@@ -1,15 +1,15 @@
 
-/*Æ¬ÉÏÍâÉè»ùµØÖ·  */
+/*ç‰‡ä¸Šå¤–è®¾åŸºåœ°å€  */
 #define PERIPH_BASE           ((unsigned int)0x40000000)                          
 
-/*×ÜÏß»ùµØÖ· */
+/*æ€»çº¿åŸºåœ°å€ */
 #define AHB1PERIPH_BASE       (PERIPH_BASE + 0x00020000)	
 
-/*GPIOÍâÉè»ùµØÖ·*/
+/*GPIOFå¤–è®¾åŸºåœ°å€*/
 #define GPIOF_BASE            (AHB1PERIPH_BASE + 0x1400)
 
 
-/* GPIOF¼Ä´æÆ÷µØÖ·,Ç¿ÖÆ×ª»»³ÉÖ¸Õë */
+/* GPIOFå¯„å­˜å™¨åœ°å€,å¼ºåˆ¶è½¬æ¢æˆæŒ‡é’ˆ */
 #define GPIOF_MODER				*(unsigned int*)(GPIOF_BASE+0x00)
 #define GPIOF_OTYPER			*(unsigned int*)(GPIOF_BASE+0x04)
 #define GPIOF_OSPEEDR			*(unsigned int*)(GPIOF_BASE+0x08)
@@ -21,10 +21,10 @@
 #define GPIOF_AFRL					*(unsigned int*)(GPIOF_BASE+0x20)
 #define GPIOF_AFRH					*(unsigned int*)(GPIOF_BASE+0x24)
 
-/*RCCÍâÉè»ùµØÖ·*/
+/*RCCå¤–è®¾åŸºåœ°å€*/
 #define RCC_BASE              (AHB1PERIPH_BASE + 0x3800)
 
-/*RCCµÄAHB1Ê±ÖÓÊ¹ÄÜ¼Ä´æÆ÷µØÖ·,Ç¿ÖÆ×ª»»³ÉÖ¸Õë*/
+/*RCCçš„AHB1æ—¶é’Ÿä½¿èƒ½å¯„å­˜å™¨åœ°å€,å¼ºåˆ¶è½¬æ¢æˆæŒ‡é’ˆ*/
 #define RCC_AHB1ENR				*(unsigned int*)(RCC_BASE+0x30)
 	
 
