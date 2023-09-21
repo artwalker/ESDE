@@ -1,12 +1,12 @@
 #include "stm32f4xx.h"
 #include "stm32f4xx_gpio.h"
 
-/* ×Ô¼ºĞ´¿â¡ª¹¹½¨¿âº¯Êı³ûĞÎ */
+/* è‡ªå·±å†™åº“â€”æ„å»ºåº“å‡½æ•°é›å½¢ */
 
 /*
- * ×¢ÒâÊÂÏî
- * ÒªÔÚ Options for target Ñ¡ÏîÀïÃæµÄ Use MicroLIBÕâ¸ö¹´Ñ¡ÉÏ
- * ÕâÑù²ÅÄÜÖ´ĞĞCÎÄ¼şÀïÃæµÄmainº¯Êı
+ * æ³¨æ„äº‹é¡¹
+ * è¦åœ¨ Options for target é€‰é¡¹é‡Œé¢çš„ Use MicroLIBè¿™ä¸ªå‹¾é€‰ä¸Š
+ * è¿™æ ·æ‰èƒ½æ‰§è¡ŒCæ–‡ä»¶é‡Œé¢çš„mainå‡½æ•°
  */
 
 void delay( unsigned int count )
@@ -17,14 +17,14 @@ void delay( unsigned int count )
 int main(void)
 {
 #if 0 
-	/* µÚÒ»²½£º¿ªGPIO¶Ë¿ÚÊ±ÖÓ */
+	/* ç¬¬ä¸€æ­¥ï¼šå¼€GPIOç«¯å£æ—¶é’Ÿ */
 	RCC_AHB1ENR |= (1<<5);
 	
-	/* µÚ¶ş²½£ºÅäÖÃGPIOÎªÊä³ö */
+	/* ç¬¬äºŒæ­¥ï¼šé…ç½®GPIOä¸ºè¾“å‡º */
 	GPIOF_MODER &= ~( 3<<(2*6) );
 	GPIOF_MODER |= ( 1<<(2*6) );
 	
-	/* µÚÈı²½£ºÈÃGPIOÊä³ö0»òÕß1£¬ODR¼Ä´æÆ÷»òÕßBSRR¼Ä´æÆ÷ */	
+	/* ç¬¬ä¸‰æ­¥ï¼šè®©GPIOè¾“å‡º0æˆ–è€…1ï¼ŒODRå¯„å­˜å™¨æˆ–è€…BSRRå¯„å­˜å™¨ */	
 	GPIOF_ODR |= (1<<6);
 	
 	while(1)
@@ -35,16 +35,16 @@ int main(void)
 	 delay(0x0fffff);
  }
 
-#elif 0  /* ¶¨ÒåÍâÉèµÄ¼Ä´æÆ÷½á¹¹Ìå */
+#elif 0  /* å®šä¹‰å¤–è®¾çš„å¯„å­˜å™¨ç»“æ„ä½“ */
  
-	/* µÚÒ»²½£º¿ªGPIO¶Ë¿ÚÊ±ÖÓ */
+	/* ç¬¬ä¸€æ­¥ï¼šå¼€GPIOç«¯å£æ—¶é’Ÿ */
 	RCC_AHB1ENR |= (1<<5);
 	
-	/* µÚ¶ş²½£ºÅäÖÃGPIOÎªÊä³ö */
+	/* ç¬¬äºŒæ­¥ï¼šé…ç½®GPIOä¸ºè¾“å‡º */
 	GPIOF->MODER &= ~( 3<<(2*6) );
 	GPIOF->MODER |= ( 1<<(2*6) );
 	
-	/* µÚÈı²½£ºÈÃGPIOÊä³ö0»òÕß1£¬ODR¼Ä´æÆ÷»òÕßBSRR¼Ä´æÆ÷ */	
+	/* ç¬¬ä¸‰æ­¥ï¼šè®©GPIOè¾“å‡º0æˆ–è€…1ï¼ŒODRå¯„å­˜å™¨æˆ–è€…BSRRå¯„å­˜å™¨ */	
 	GPIOF->ODR |= (1<<6);
 	
 	while(1)
@@ -56,16 +56,16 @@ int main(void)
  }
 
 
-#elif 0  /* ¶¨ÒåÍâÉèµÄ³õÊ¼»¯½á¹¹ÌåºÍ±àĞ´ÍâÉèµÄ³õÊ¼»¯º¯Êı */
+#elif 0  /* å®šä¹‰å¤–è®¾çš„åˆå§‹åŒ–ç»“æ„ä½“å’Œç¼–å†™å¤–è®¾çš„åˆå§‹åŒ–å‡½æ•° */
  
-	/* µÚÒ»²½£º¿ªGPIO¶Ë¿ÚÊ±ÖÓ */
+	/* ç¬¬ä¸€æ­¥ï¼šå¼€GPIOç«¯å£æ—¶é’Ÿ */
 	RCC_AHB1ENR |= (1<<5);
 	
-	/* µÚ¶ş²½£ºÅäÖÃGPIOÎªÊä³ö */
+	/* ç¬¬äºŒæ­¥ï¼šé…ç½®GPIOä¸ºè¾“å‡º */
 	GPIOF->MODER &= ~( 3<<(2*6) );
 	GPIOF->MODER |= ( 1<<(2*6) );
 	
-	/* µÚÈı²½£ºÈÃGPIOÊä³ö0»òÕß1£¬ODR¼Ä´æÆ÷»òÕßBSRR¼Ä´æÆ÷ */	
+	/* ç¬¬ä¸‰æ­¥ï¼šè®©GPIOè¾“å‡º0æˆ–è€…1ï¼ŒODRå¯„å­˜å™¨æˆ–è€…BSRRå¯„å­˜å™¨ */	
 	GPIOF->ODR |= (1<<6);
 	
 	while(1)
@@ -76,29 +76,28 @@ int main(void)
 	 delay(0x0fffff);
  }  
 
-#elif 1  /* ±àĞ´¶Ë¿ÚµÄ¸´Î»ºÍÖÃÎ»º¯Êı */
+#elif 1  /* ç¼–å†™ç«¯å£çš„å¤ä½å’Œç½®ä½å‡½æ•° */
  
-	/* µÚÒ»²½£º¿ªGPIO¶Ë¿ÚÊ±ÖÓ */
+	/* ç¬¬ä¸€æ­¥ï¼šå¼€GPIOç«¯å£æ—¶é’Ÿ */
 	RCC_AHB1ENR |= (1<<5);
 	
-//	/* µÚ¶ş²½£ºÅäÖÃGPIOÎªÊä³ö */
+//	/* ç¬¬äºŒæ­¥ï¼šé…ç½®GPIOä¸ºè¾“å‡º */
 //	GPIOF->MODER &= ~( 3<<(2*6) );
 //	GPIOF->MODER |= ( 1<<(2*6) );
  
-// c89 µÄÓï·¨¸ñÊ½£¬¾ÍÊÇ±äÁ¿±ØĞëÔÚ½ô¸ú´óÀ¨ºÅ
+// c89 çš„è¯­æ³•æ ¼å¼ï¼Œå°±æ˜¯å˜é‡å¿…é¡»åœ¨ç´§è·Ÿå¤§æ‹¬å·
 // c99 
 //{
 	GPIO_InitTypeDef  GPIO_InitStruct;
-  GPIO_InitStruct.GPIO_Pin = GPIO_Pin_6;
+  	GPIO_InitStruct.GPIO_Pin = GPIO_Pin_6;
 	GPIO_InitStruct.GPIO_Mode = GPIO_Mode_OUT;
 	GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_UP;
 	GPIO_InitStruct.GPIO_OType = GPIO_OType_PP;
-  GPIO_InitStruct.GPIO_Speed = GPIO_Speed_2MHz;
-  GPIO_Init(GPIOF, &GPIO_InitStruct);
- 
+  	GPIO_InitStruct.GPIO_Speed = GPIO_Speed_2MHz;
+  	GPIO_Init(GPIOF, &GPIO_InitStruct);
 //}
  
-	/* µÚÈı²½£ºÈÃGPIOÊä³ö0»òÕß1£¬ODR¼Ä´æÆ÷»òÕßBSRR¼Ä´æÆ÷ */	
+	/* ç¬¬ä¸‰æ­¥ï¼šè®©GPIOè¾“å‡º0æˆ–è€…1ï¼ŒODRå¯„å­˜å™¨æˆ–è€…BSRRå¯„å­˜å™¨ */	
 	GPIOF->ODR |= (1<<6);
 	
 	while(1)
@@ -114,7 +113,7 @@ int main(void)
 
 void SystemInit(void)
 {
-	/* º¯ÊıÌåÎª¿Õ£¬Ä¿µÄÊÇÎªÁËÆ­¹ı±àÒëÆ÷²»±¨´í */
+	/* å‡½æ•°ä½“ä¸ºç©ºï¼Œç›®çš„æ˜¯ä¸ºäº†éª—è¿‡ç¼–è¯‘å™¨ä¸æŠ¥é”™ */
 }
 
 
