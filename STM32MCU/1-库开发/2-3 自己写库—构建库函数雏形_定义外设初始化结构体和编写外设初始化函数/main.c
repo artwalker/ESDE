@@ -100,7 +100,7 @@ int main(void)
 	/* 第三步：让GPIO输出0或者1，ODR寄存器或者BSRR寄存器 */	
 	GPIOF->ODR |= (1<<6);
 	
-	while(1)
+while(1)
  {
 	 GPIO_ResetBits(GPIOF,GPIO_Pin_6);
 	 delay(0x0fffff);
