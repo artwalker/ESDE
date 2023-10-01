@@ -26,7 +26,7 @@ And that is narrow AI. So from now on, when I say AI, I'm talking about narrow a
 There are many ways to build AI, two classical ways to implement artificial intelligence including expert systems and tree search.  
 ## Expert systems
 In an expert system, it's just a person writing a list of rules. If this,then that. If this, then that.  
-![expert systems](https://img2023.cnblogs.com/blog/1994352/202309/1994352-20230927115059763-1261658346.png)
+![expert systems](https://img2023.cnblogs.com/blog/1994352/202309/1994352-20230927115059763-1261658346.png)  
 But a lot of the things that we actually think of as really straightforward turn out to be quite difficult.So for example, we can identify a table like that-- very, very easily. We know what the table is.  
 But I challenge you towrite a list of rules that can define a table. What color is it? What's it made of? How many legs does it have?What shape is it?  
 So it turns out that even something like "what is a table" becomes really, really challenging to answer using an expert system.
@@ -139,7 +139,7 @@ When you simulate it, then the question is, how good is your simulation? Will it
 So goal, training data, model, accuracy. If you keep these four questions in mind, you'll be better able to assess any AI system you encounter.
 ## A word of caution
 Values->Mission->Objectives->Strategy->Task  
-![a_word_of_caution](https://img2023.cnblogs.com/blog/1994352/202309/1994352-20230927115138694-653640354.png)
+![a_word_of_caution](https://img2023.cnblogs.com/blog/1994352/202309/1994352-20230927115138694-653640354.png)  
 Developing an AI model can be very difficult, can also be very valuable, and it can also be very seductive.  
 It is a task.  
 If the task does not belong to a strategy in support of certain objectives that measure a mission that reflect values, it is not a good use of time, even if it is really cool.  
@@ -162,5 +162,4 @@ So it's really important to be discerning about what kind of problem you're tryi
 But at this point, I hope, and I think that you have the tools to prevent that from happening, and to harness this very powerful new technology in support of building a more effective Air Force and pursuing America's interests.
 
 # 内容来源
-
 - [res-6-013-ai-101-fall-2021](https://ocw.mit.edu/courses/res-6-013-ai-101-fall-2021/)
