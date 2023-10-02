@@ -67,5 +67,5 @@ GPIOF_ODR &=~ (1<<6);
 **3. 创建工程模板-出现编译错误**  
 最开始在“魔术帮”设置完后的C/C++界面如下图：  
 ![Arm_Compiler_6](https://img2023.cnblogs.com/blog/1994352/202310/1994352-20231002220347902-1075310687.png)  
-和教程介绍的不一样，并且编译出错，应该按如下图修改一样，将魔术棒-Target-Code -Generation-Arm Compiler-6->5:  
+和教程介绍的不一样，并且编译出错，应该按如下图修改，将魔术棒-Target-Code -Generation-Arm Compiler-6->5:  
 ![img](https://img2023.cnblogs.com/blog/1994352/202310/1994352-20231002220708825-315356314.png)  
