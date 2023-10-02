@@ -64,7 +64,7 @@ GPIOF_ODR &=~ (1<<6);
 **2. 不识别芯片**  
 修改Connect为under Reset之后就是别出来了；以后调整为Nomal也会识别；之后DAP仿真器与芯片连接次数多后，很快就识别出来了。  
 ![image](https://github.com/artwalker/ESDE/assets/44759507/b1a7338b-57b9-4bfc-9387-78bd4f79be83)  
-**3. 创建工程模板-出现编译错误**
+**3. 创建工程模板-出现编译错误**  
 最开始在“魔术帮”设置完后的C/C++界面如下图：  
 ![Arm_Compiler_6](https://img2023.cnblogs.com/blog/1994352/202310/1994352-20231002220347902-1075310687.png)  
 和教程介绍的不一样，并且编译出错，应该按如下图修改一样，将魔术棒-Target-Code -Generation-Arm Compiler-6->5:  
