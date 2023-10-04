@@ -75,7 +75,7 @@ GPIOF_ODR &=~ (1<<6);
 ![Arm_Compiler_6](https://img2023.cnblogs.com/blog/1994352/202310/1994352-20231002220347902-1075310687.png)  
 和教程介绍的不一样，并且编译出错，应该按如下图修改，将魔术棒-Target-Code -Generation-Arm Compiler-6->5:  
 ![img](https://img2023.cnblogs.com/blog/1994352/202310/1994352-20231002220708825-315356314.png)  
-**4. 3-2 GPIO输出一使用固件库点亮LED灯: bsp_led.h 写的可能不太详细，增加解释注释**
+**4. 3-3 GPIO输出一使用固件库点亮LED灯: bsp_led.h 写的可能不太详细，增加解释注释**
 ```C
 /* 直接操作寄存器的方法控制IO */
 // 参考GPIO_ResetBits(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)函数的实现，发现实现对BSRRH寄存器的操作为：GPIOx->BSRRH = GPIO_Pin;
