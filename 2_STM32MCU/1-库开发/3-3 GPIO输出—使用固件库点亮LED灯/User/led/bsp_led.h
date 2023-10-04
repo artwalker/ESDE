@@ -46,8 +46,9 @@
 					GPIO_ResetBits(LED3_GPIO_PORT,LED3_PIN)
 
 /* 直接操作寄存器的方法控制IO */
-// 参考GPIO_ResetBits(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)函数的实现，发现实现对BSRRH寄存器的操作为：GPIOx->BSRRH = GPIO_Pin;
-// 可作为次数控制IO的参考
+// 参考GPIO_ResetBits(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)函数底层的实现，
+// 发现其实现对BSRRH寄存器的复位操作为：GPIOx->BSRRH = GPIO_Pin;
+// 和此处直接操作寄存器进行Set和Reset是异曲同工，故可作为此处控制IO的参考
 #define	digitalHi(p,i)			 {p->BSRRL=i;}		//设置为高电平，也就是对BSRRRL进行赋值为1，故此时IO端口为高电平
 #define digitalLo(p,i)			 {p->BSRRH=i;}		//输出低电平，也就是对BSRRRH进行赋值为1进行复位，故此时IO端口为低电平
 #define digitalToggle(p,i)	 {p->ODR ^=i;}		//输出反转状态
