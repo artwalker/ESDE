@@ -39,6 +39,8 @@ Happy learning and happy coding! Embedded Development Learning Repository
 [**MIT 6.002 Circuits and Electronics, Spring 2007 by Profs. Anant Agarwal**](https://www.youtube.com/watch?v=AfQxyVuLeCs&list=PL9F74AFA03AA06A11&index=1)  
 # 记录STM32学习过程：
 [**库开发实战**](https://doc.embedfire.com/mcu/stm32/f407batianhu/std/zh/latest/index.html)
+## 心得体会
+通过学习入门篇，发现视频里编写的代码都较为简单，而给的资料中的实验代码
 ## 小技巧
 ```C
 # 将 该寄存器的第6位 置1，也就是将1向左移动 5 位
