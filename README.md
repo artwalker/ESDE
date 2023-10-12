@@ -39,7 +39,7 @@ Happy learning and happy coding! Embedded Development Learning Repository
 [**MIT 6.002 Circuits and Electronics, Spring 2007 by Profs. Anant Agarwal**](https://www.youtube.com/watch?v=AfQxyVuLeCs&list=PL9F74AFA03AA06A11&index=1)  
 # 记录STM32学习过程：
 [**库开发实战**](https://doc.embedfire.com/mcu/stm32/f407batianhu/std/zh/latest/index.html)
-## 心得体会
+## 学习库开发心得体会
 通过学习入门篇，我发现视频中的代码都相对简单。然而，在给出的资料中，实验代码则更加精炼、简洁且优美。  
 如果只是单纯地观看视频，而不仔细阅读资料文档，可能会导致在下一节课时无法理解。  
 因此，我认为对于野火的教学方法，较好的学习策略是：  
@@ -108,3 +108,23 @@ SRAM的位带区的地址为：0X20000000~X200F0000 -> 0X20000000~0X200FFFFF
 #define digitalLo(p,i)    {p->BSRRH=i;}  //输出低电平，也就是对BSRRRH进行赋值为1进行复位，故此时IO端口为低电平
 #define digitalToggle(p,i)  {p->ODR ^=i;}  //输出反转状态
 ```
+
+## freeRTOS内核实现与应用开发实战
+## 相关网站
+[freeRTOS_Website](https://www.freertos.org/)  
+[The source repository before 2023](https://sourceforge.net/projects/freertos/files/)  
+[The freeRTOS github repository](https://github.com/FreeRTOS/FreeRTOS-Kernel)  
+## 补充知识
+### 第4章 新建 FreeRTOS 工程—软件仿真
+G在C语言中，UL是一个后缀，表示无符号长整型(unsigned long)，如50000000UL表示一个无符号长整型的常量，其值为50000000；  
+使用UL后缀的好处是可以确保常量的类型正确，避免在计算时出现错误。如果不使用UL后缀，编译器可能会将常量解释为有符号整型，从而导致计算错误；  
+如果你需要使用其他类型的常量，可以使用其他后缀，例如U表示无符号整型(unsigned int)、L表示长整型(long)等。  
+  
+1M=10^6  50000000=50M
+## 问题记录
+### 第4章 新建 FreeRTOS 工程—软件仿真
+创建的文件与后面include库文件的文件路径不一致,之前的include和portable都创建在source目录下：  
+![img](https://img2023.cnblogs.com/blog/1994352/202310/1994352-20231012165303136-127560239.png)  
+![img](https://img2023.cnblogs.com/blog/1994352/202310/1994352-20231012165504110-636219168.png)  
+   
+keil5设置界面的xtal在v5.35以后版本中禁用了修改，老版本可以修改，推荐使用版本v5.34
