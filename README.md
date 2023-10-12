@@ -123,8 +123,8 @@ G在C语言中，UL是一个后缀，表示无符号长整型(unsigned long)，�
 1M=10^6  50000000=50M
 ## 问题记录
 ### 第4章 新建 FreeRTOS 工程—软件仿真
-创建的文件与后面include库文件的文件路径不一致,之前的include和portable都创建在source目录下：  
+- 创建的文件与后面include库文件的文件路径不一致,之前的include和portable都创建在source目录下：  
 ![img](https://img2023.cnblogs.com/blog/1994352/202310/1994352-20231012165303136-127560239.png)  
 ![img](https://img2023.cnblogs.com/blog/1994352/202310/1994352-20231012165504110-636219168.png)  
    
-keil5设置界面的xtal在v5.35以后版本中禁用了修改，老版本可以修改，推荐使用版本v5.34
+- keil5设置界面的xtal在v5.35以后版本中禁用了修改，老版本可以修改，推荐使用版本v5.34
