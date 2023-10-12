@@ -13,6 +13,8 @@ Whether you are pursuing a career in embedded systems or simply passionate about
 Welcome contributions from the community to further enhance and expand the repository. Feel free to fork, make pull requests, and share your valuable insights to help fellow learners in their embedded development journey.  
 
 Happy learning and happy coding! Embedded Development Learning Repository
+
+[toc]
 # 记录51MCU学习过程：
 ## 51MCU
 **心得体会：**  
@@ -48,10 +50,21 @@ Happy learning and happy coding! Embedded Development Learning Repository
 2. 然后，听视频讲解；
 3. 接着，仔细阅读教学文档，并结合视频讲解，以便更好地理解代码；
 4. 最后，整理资料并记录心得。
-
 ### 13. GPIO输入—按键检测
 在之前的学习中，我们主要关注的是ODR（输出数据寄存器），通过控制ODR来控制I/O引脚（I/O pin，可以参考“STM32Fxx参考手册”）的高低电平，从而控制LED灯的亮灭。而现在我们要学习的是GPIO输入模式，因此我们需要将注意力转移到IDR（输入数据寄存器）上，通过读取IDR来获取I/O引脚的高低电平，从而判断按键是否按下。之所以强调这个不同点，是因为在视频课程讲解中没有提到这一点，所以当讲到GPIO输入时，并没有提及IDR，这可能会让学习者产生困惑，有种迷茫的感觉。因此，在这里特别强调一下。
+## FreeRTOS内核实现与应用开发实战
+### 相关网站
+[freeRTOS_Website](https://www.freertos.org/)  
+[The source repository before 2023](https://sourceforge.net/projects/freertos/files/)  
+[The freeRTOS github repository](https://github.com/FreeRTOS/FreeRTOS-Kernel)  
+### 补充知识
+#### 第4章 新建 FreeRTOS 工程—软件仿真
 
+G在C语言中，UL是一个后缀，表示无符号长整型(unsigned long)，如50000000UL表示一个无符号长整型的常量，其值为50000000；  
+使用UL后缀的好处是可以确保常量的类型正确，避免在计算时出现错误。如果不使用UL后缀，编译器可能会将常量解释为有符号整型，从而导致计算错误；  
+如果你需要使用其他类型的常量，可以使用其他后缀，例如U表示无符号整型(unsigned int)、L表示长整型(long)等。  
+  
+1M=10^6  50000000=50M
 ## 小技巧
 ```C
 # 将 该寄存器的第6位 置1，也就是将1向左移动 5 位
@@ -87,7 +100,15 @@ SRAM的位带区的地址为：0X20000000~X200F0000 -> 0X20000000~0X200FFFFF
 - 空函数中无线循环 -> 空函数中无限循环
 - 这个章节所展示的进行讲解的汇编代码格式在网页显示效果中缺少缩进，不利于阅读理解，可以在打开Project之后再打开startup_stm32f40xx.s文件进行参考阅读学习。
 
+### FreeRTOS
+
+#### 第4章 新建 FreeRTOS 工程—软件仿真
+
+创建的文件与后面include库文件的文件路径不一致,之前的include和portable都创建在source目录下：  
+![img](https://img2023.cnblogs.com/blog/1994352/202310/1994352-20231012165303136-127560239.png)  
+![img](https://img2023.cnblogs.com/blog/1994352/202310/1994352-20231012165504110-636219168.png)  
 ## 问题记录
+### 库开发
 **1. 不识别DAP仿真器**  
 使用ubuntu操作系统，上面安装了VM虚拟机，之后在虚拟机上安装了win10操作系统，每次连接DAP仿真器，Keil 5并不识别，之后发现多次插拔DAP仿真器的USB连接，直到Keil 5识别。  
 **2. 不识别芯片**  
@@ -108,23 +129,6 @@ SRAM的位带区的地址为：0X20000000~X200F0000 -> 0X20000000~0X200FFFFF
 #define digitalLo(p,i)    {p->BSRRH=i;}  //输出低电平，也就是对BSRRRH进行赋值为1进行复位，故此时IO端口为低电平
 #define digitalToggle(p,i)  {p->ODR ^=i;}  //输出反转状态
 ```
-
-## freeRTOS内核实现与应用开发实战
-## 相关网站
-[freeRTOS_Website](https://www.freertos.org/)  
-[The source repository before 2023](https://sourceforge.net/projects/freertos/files/)  
-[The freeRTOS github repository](https://github.com/FreeRTOS/FreeRTOS-Kernel)  
-## 补充知识
-### 第4章 新建 FreeRTOS 工程—软件仿真
-G在C语言中，UL是一个后缀，表示无符号长整型(unsigned long)，如50000000UL表示一个无符号长整型的常量，其值为50000000；  
-使用UL后缀的好处是可以确保常量的类型正确，避免在计算时出现错误。如果不使用UL后缀，编译器可能会将常量解释为有符号整型，从而导致计算错误；  
-如果你需要使用其他类型的常量，可以使用其他后缀，例如U表示无符号整型(unsigned int)、L表示长整型(long)等。  
-  
-1M=10^6  50000000=50M
-## 问题记录
-### 第4章 新建 FreeRTOS 工程—软件仿真
-- 创建的文件与后面include库文件的文件路径不一致,之前的include和portable都创建在source目录下：  
-![img](https://img2023.cnblogs.com/blog/1994352/202310/1994352-20231012165303136-127560239.png)  
-![img](https://img2023.cnblogs.com/blog/1994352/202310/1994352-20231012165504110-636219168.png)  
-   
-- keil5设置界面的xtal在v5.35以后版本中禁用了修改，老版本可以修改，推荐使用版本v5.34
+### FreeRTOS
+**1. 无法修改xtal晶振频率**  
+keil5设置界面的xtal在v5.35以后版本中禁用了修改，老版本可以修改，推荐使用版本v5.34
