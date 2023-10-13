@@ -16,10 +16,11 @@ Happy learning and happy coding! Embedded Development Learning Repository
 
 <!--ts-->
    **Category**
-* [记录51MCU学习过程](#记录51MCU学习过程:)
+
+* [记录51MCU学习过程](#记录51MCU学习过程：)
   * [51MCU](##51MCU)
   * [问题记录](##问题记录)
-* [记录STM32学习过程](#记录STM32学习过程:)
+* [记录STM32学习过程](#记录STM32学习过程：)
   * [学习库开发心得体会](##学习库开发心得体会)
   * [FreeRTOS内核实现与应用开发实战](##FreeRTOS内核实现与应用开发实战)
 * [小技巧](##小技巧)
