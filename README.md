@@ -15,7 +15,16 @@ Welcome contributions from the community to further enhance and expand the repos
 Happy learning and happy coding! Embedded Development Learning Repository
 
 <!--ts-->
-   目录
+   **Category**
+* [记录51MCU学习过程](#记录51MCU学习过程:)
+  * [51MCU](##51MCU)
+  * [问题记录](##问题记录)
+* [记录STM32学习过程](#记录STM32学习过程:)
+  * [学习库开发心得体会](##学习库开发心得体会)
+  * [FreeRTOS内核实现与应用开发实战](##FreeRTOS内核实现与应用开发实战)
+* [小技巧](##小技巧)
+* [野火文档错误记录](##野火文档错误记录)
+* [问题记录](##问题记录)
 <!--te-->
 # 记录51MCU学习过程：
 ## 51MCU
@@ -67,7 +76,9 @@ G在C语言中，UL是一个后缀，表示无符号长整型(unsigned long)，�
 如果你需要使用其他类型的常量，可以使用其他后缀，例如U表示无符号整型(unsigned int)、L表示长整型(long)等。  
   
 1M=10^6  50000000=50M
+
 ## 小技巧
+
 ```C
 # 将 该寄存器的第6位 置1，也就是将1向左移动 5 位
 RCC_AHB1ENR |= (1<<5)
@@ -81,6 +92,7 @@ GPIOF_MODER |= (1<<(2*6))
 # 将从0开始数的第6位 设置为0
 GPIOF_ODR &=~ (1<<6);
 ```
+
 ## 野火文档错误记录
 ### 库开发实战
 #### 8. 使用寄存器点亮LED灯
