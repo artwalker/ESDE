@@ -1,16 +1,18 @@
 Dependencies for Project 'Fire_FreeRTOS', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (..\User\main.c)(0x6527B6E2)(-c --cpu Cortex-M4 --li -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\freertos\Source\include -I ..\freertos\Source\portable\RVDS\ARM_CM4-I.\RTE\_Target_1-IC:\old_keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\old_keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM4\Include-D__UVISION_VERSION="534" -D_RTE_ -DARMCM4 -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-F (..\freertos\list.c)(0x65292FF0)(-c --cpu Cortex-M4 --li -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\freertos\Source\include -I ..\freertos\Source\portable\RVDS\ARM_CM4-I.\RTE\_Target_1-IC:\old_keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\old_keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM4\Include-D__UVISION_VERSION="534" -D_RTE_ -DARMCM4 -D_RTE_-o .\objects\list.o --omf_browse .\objects\list.crf --depend .\objects\list.d)
-F (..\freertos\Source\include\list.h)(0x6529314C)()
-F (..\Doc\README.md)(0x6527A7BD)()
-F (RTE\Device\ARMCM4\startup_ARMCM4.s)(0x5E8ED12C)(--cpu Cortex-M4 --li -g --apcs=interwork -I.\RTE\_Target_1-IC:\old_keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\old_keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM4\Include--pd "__UVISION_VERSION SETA 534" --pd "_RTE_ SETA 1" --pd "ARMCM4 SETA 1" --pd "_RTE_ SETA 1"--list .\listings\startup_armcm4.lst --xref -o .\objects\startup_armcm4.o --depend .\objects\startup_armcm4.d)
-F (RTE\Device\ARMCM4\system_ARMCM4.c)(0x5E8ED12C)(-c --cpu Cortex-M4 --li -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\freertos\Source\include -I ..\freertos\Source\portable\RVDS\ARM_CM4-I.\RTE\_Target_1-IC:\old_keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\old_keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM4\Include-D__UVISION_VERSION="534" -D_RTE_ -DARMCM4 -D_RTE_-o .\objects\system_armcm4.o --omf_browse .\objects\system_armcm4.crf --depend .\objects\system_armcm4.d)
-I (C:\old_keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM4\Include\ARMCM4.h)(0x5E8306CE)
-I (C:\old_keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8ED122)
-I (C:\old_keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
-I (C:\old_keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8ED122)
-I (C:\old_keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8306C2)
-I (C:\old_keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8ED122)
-I (C:\old_keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8ED122)
-I (C:\old_keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM4\Include\system_ARMCM4.h)(0x5E8ED12C)
+F (..\User\main.c)(0x652B8051)(-c --cpu Cortex-M4 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\freertos\Source\include -I ..\freertos\Source\portable\RVDS\ARM_CM4-I.\RTE\_Target_1-ID:\Software\keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Software\keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -D_RTE_ -DARMCM4 -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (..\freertos\list.c)(0x652B8051)(-c --cpu Cortex-M4 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\freertos\Source\include -I ..\freertos\Source\portable\RVDS\ARM_CM4-I.\RTE\_Target_1-ID:\Software\keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Software\keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -D_RTE_ -DARMCM4 -D_RTE_-o .\objects\list.o --omf_browse .\objects\list.crf --depend .\objects\list.d)
+F (..\freertos\Source\include\list.h)(0x652B99F7)()
+F (..\freertos\Source\include\portmacro.h)(0x652B8051)()
+F (..\freertos\Source\include\FreeRTOSConfig.h)(0x652B8051)()
+F (..\Doc\README.md)(0x652B8051)()
+F (RTE\Device\ARMCM4\startup_ARMCM4.s)(0x652B8051)(--cpu Cortex-M4 --li --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_Target_1-ID:\Software\keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Software\keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM4\Include--pd "__UVISION_VERSION SETA 536" --pd "_RTE_ SETA 1" --pd "ARMCM4 SETA 1" --pd "_RTE_ SETA 1"--list .\listings\startup_armcm4.lst --xref -o .\objects\startup_armcm4.o --depend .\objects\startup_armcm4.d)
+F (RTE\Device\ARMCM4\system_ARMCM4.c)(0x652B8051)(-c --cpu Cortex-M4 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\freertos\Source\include -I ..\freertos\Source\portable\RVDS\ARM_CM4-I.\RTE\_Target_1-ID:\Software\keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Software\keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM4\Include-D__UVISION_VERSION="536" -D_RTE_ -DARMCM4 -D_RTE_-o .\objects\system_armcm4.o --omf_browse .\objects\system_armcm4.crf --depend .\objects\system_armcm4.d)
+I (D:\Software\keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM4\Include\ARMCM4.h)(0x60D3E8E2)
+I (D:\Software\keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm4.h)(0x60D3E8E2)
+I (D:\Software\keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (D:\Software\keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (D:\Software\keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (D:\Software\keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (D:\Software\keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h)(0x60D3E8E2)
+I (D:\Software\keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM4\Include\system_ARMCM4.h)(0x60D3E8E2)
