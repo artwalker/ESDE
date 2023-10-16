@@ -1,1 +1,9 @@
 .\objects\list.o: ..\freertos\list.c
+.\objects\list.o: ..\freertos\Source\include\FreeRTOS.h
+.\objects\list.o: ..\freertos\Source\include\FreeRTOSConfig.h
+.\objects\list.o: ..\freertos\Source\include\portable.h
+.\objects\list.o: ..\freertos\Source\include\portmacro.h
+.\objects\list.o: C:\old_keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\list.o: C:\old_keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\list.o: C:\old_keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\list.o: ..\freertos\Source\include\list.h
