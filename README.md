@@ -23,6 +23,7 @@ Happy learning and happy coding! Embedded Development Learning Repository
 * [记录STM32学习过程](#记录STM32学习过程：)
   * [学习库开发心得体会](##学习库开发心得体会)
   * [FreeRTOS内核实现与应用开发实战](##FreeRTOS内核实现与应用开发实战)
+  * [电机应用开发实战指南-基于STM32](##电机应用开发实战指南-基于STM32)
 * [小技巧](##小技巧)
 * [野火文档错误记录](##野火文档错误记录)
 * [问题记录](##问题记录)
@@ -69,6 +70,9 @@ Happy learning and happy coding! Embedded Development Learning Repository
 [freeRTOS_Website](https://www.freertos.org/)  
 [The source repository before 2023](https://sourceforge.net/projects/freertos/files/)  
 [The freeRTOS github repository](https://github.com/FreeRTOS/FreeRTOS-Kernel)  
+
+## 电机应用开发实战指南-基于STM32
+[电机应用开发实战指南](https://doc.embedfire.com/motor/motor_tutorial/zh/latest/index.html)
 ### 补充知识
 #### 第4章 新建 FreeRTOS 工程—软件仿真
 
